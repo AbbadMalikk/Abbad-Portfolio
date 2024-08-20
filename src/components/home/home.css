@@ -70,7 +70,7 @@ margin-bottom: 24px;
 
 
 .home_img{
-    background:url(../../../public/AbbadMalik.jpg) ;
+    background:url('/AbbadMalik.jpg') ;
     background-repeat: no-repeat ;
     background-position: center;
     background-size: cover;
