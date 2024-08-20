@@ -9,9 +9,7 @@ const Home = () => {
         <div className='home_content grid'>
         <Social/>
 
-        <div className='home_img'  style={{
-    background: 'url(/AbbadMalik.jpg) '
-  }}>
+        <div className='home_img'>
 
         </div>
         <Data/>
