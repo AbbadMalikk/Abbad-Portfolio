@@ -1,0 +1,146 @@
+.skills_container {
+    grid-template-columns: repeat(2, 550px);
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+.skills_content {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+}
+
+.skills_title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+}
+
+.skills_box{
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+
+}
+.skills_group{
+    display: grid;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+.skills_data{
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.skills_name{
+    font-size: var(--normal-font-size);
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.skills_icon {
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin-right: 0.5rem; /* Adjust spacing between icon and text */
+}
+
+.html_icon {
+    color: #E34F26; /* HTML5 Orange */
+}
+
+.css_icon {
+    color: #1572B6; /* CSS3 Blue */
+}
+
+.js_icon {
+    color: #F7DF1E; /* JavaScript Yellow */
+}
+.framer_icon {
+    color: #0055FF; /* Framer Blue */
+}
+
+.git_icon {
+    color: #F05032; /* Git Orange */
+}
+
+.react_icon {
+    color: #61DAFB; /* React Cyan */
+}
+
+.figma_icon {
+    color: #F24E1E; /* Figma Red */
+}
+
+.spline_icon {
+    color: #9B59B6; /* Spline Purple */
+}
+
+.vite_icon {
+    color: #646CFF; /* Vite Blue */
+}
+
+.nextjs_icon {
+    color: #000000; /* Next.js Black */
+}
+
+.node_icon {
+    color: #68A063; /* Node.js Green */
+}
+
+.express_icon {
+    color: #000000; /* Express.js Black */
+}
+
+.mongodb_icon {
+    color: #4DB33D; /* MongoDB Green */
+}
+
+.firebase_icon {
+    color: #FFCA28; /* Firebase Yellow */
+}
+
+/* Additional styles for layout */
+.skills_data {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.skills_name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.skills_level {
+    font-size: 0.875rem;
+    color: #666666; /* Gray color for level text */
+}
+
+
+@media screen and (max-width: 992px) {
+   .skills_container{
+    grid-template-columns: max-content;
+    row-gap: 2rem;
+   }
+}
+
+@media screen and (max-width: 576px) {
+    .skills_container{
+        grid-template-columns: 1fr;
+    }
+    .skills_content{
+        padding: 1rem;
+    }
+    .skills_box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skills_group{
+        margin-bottom: 15px;
+    }
+}
+  
+@media screen and (max-width : 350px) {
+    
+}

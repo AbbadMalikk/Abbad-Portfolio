@@ -1,0 +1,212 @@
+.home_content{
+    grid-template-columns: 116px repeat(2,1fr);
+    padding-top: 6rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.home_social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+.home_social-icon{
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+.home_title{
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-0-25 );
+}
+.hand-icon {
+    margin-left: 10px;
+    margin-bottom: 3px ;
+    font-size: 43px; /* Adjust size as needed */
+    color: #262626; /* Example color */
+    filter: drop-shadow(8px 8px 15px rgba(0, 0, 0, 0.7));
+    animation: wave 1s infinite; /* 1s duration, infinite loop */
+    transform-origin: bottom center; /* Ensures the rotation occurs around the bottom center of the icon */
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-30deg); /* Rotate 30 degrees to the left */
+    }
+    100% {
+      transform: rotate(0deg); /* Return to original position */
+    }
+  }
+  
+
+.home_social-icon:hover{
+    color: var(--title-color-dark);
+    filter: drop-shadow(-2px 4px 2px rgb(0,0,0,0.3));
+}
+
+.home_subtitle{
+    position: relative; 
+    font-size: var(--h3-font-size);
+    padding-left: 5.4rem;
+    font-weight: var(--font-normal);
+    margin-bottom: var(--mb-1);
+}
+
+.home_subtitle::before{
+    content:'';
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: var(--text-color);
+    left:0;
+    top:1rem;
+}
+.home_description{
+max-width: 400px;
+margin-bottom: 24px;
+}
+
+
+.home_img{
+    background:url(../../../AbbadMalik.jpg) ;
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgb(255 255 255 /30%);
+    order: 1;
+    justify-self: center;
+    width:300px;
+    height: 300px;
+    animation: profile_animation 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile_animation{
+    0%{
+        border-radius:60% 40% 30% 70%/ 60% 30% 70% 40%
+    }
+
+    50%{
+        border-radius:30% 60% 70% 40%/ 50% 60% 30% 60%
+    }
+
+    100%{
+        border-radius:60% 40% 30% 70%/ 60% 30% 70% 40%
+    }
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .home_content{
+    grid-template-columns:  100px repeat(2,1fr);
+    column-gap: 1.25rem;
+  }
+  .hand-icon{
+    width: 30px;
+    height: 30px;
+  }
+  .home_subtitle{
+    padding-left: 3.75rem;
+    margin-bottom:  var(--mb-1);
+
+  }
+
+  .home_subtitle::before{
+    width: 42px;
+    top:0.8rem 
+  }
+    .home_description{
+        max-width: initial;
+        margin-bottom: var(--mb-2-5);
+
+    }
+    .home_img{
+        width: 250px;
+        height: 250px;
+        box-shadow: inset 0 0 0 9px rgb(255 255 255 /30%);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+   .home_content{
+    grid-template-columns:  0.5fr 3fr;
+    padding-top: 3.5rem;
+   }
+   .home_img{
+    order:initial;
+    justify-self: center;
+   } 
+   .home_data{
+    grid-column: 1/3;
+   }
+   .home_img{
+        width: 200px;
+        height: 200px;
+        box-shadow: inset 0 0 0 6px rgb(255 255 255 /30%);
+        margin-right: 20%;
+   }
+   .home_subtitle{
+    text-align: center;
+    padding: 0;
+  }
+  .home_subtitle::before{
+    text-align: center;
+    left: 23%;
+  }
+
+  .home_title{
+    text-align: center;
+  }
+  .home_description{
+    text-align: center;
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+  }
+  .send-icon{
+    padding-left: 5px;
+  }
+
+
+  }
+
+  @media screen and (max-width : 350px) {
+    .home_img{
+        width: 170px;
+        height: 170px;
+        box-shadow: inset 0 0 0 4px rgb(255 255 255 /30%);
+   }
+   .hand-icon{
+    width:22px;
+    height: 22px;
+  }
+  .home_subtitle{
+    text-align: center;
+    padding: 0;
+  }
+  .home_subtitle::before{
+    display: none;
+    text-align: center;
+    left: 23%;
+  }
+
+  .home_title{
+    text-align: center;
+  }
+  .home_description{
+    text-align: center;
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+  }
+  .send-icon{
+    padding-left: 5px;
+  }
+
+  }
