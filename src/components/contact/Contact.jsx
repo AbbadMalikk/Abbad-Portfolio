@@ -95,7 +95,7 @@ const Contact = () => {
                     </div>
 
                     <div className="contact_form-div contact_form-area">
-                        <label className='contact_form-tag'>Name</label>
+                        <label className='contact_form-tag'>Project</label>
                         <textarea name="project" className='contact_form-input' placeholder='Write your project...' cols="30" rows="10"></textarea>
                     </div>
                 <button className='button button--flex' disabled={isLoading || isSent}>
