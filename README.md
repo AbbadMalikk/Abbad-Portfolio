@@ -11,14 +11,14 @@
    <p style="font-size: 1.2em; color: #555;">
         I absolutely <span style="color: #FF5733;">❤️</span> working on web projects and exploring 
         cutting-edge technologies that make websites visually stunning and highly interactive. 
-        While I am a <strong>full-stack developer</strong>, my heart leans more towards the 
+        While I am a <strong>full-stack developer</strong> using MERN, my heart leans more towards the 
         <strong>frontend</strong>. 🌟 I am continually honing my skills and pushing myself to 
         excel in this area.
     </p>
 
   <p style="font-size: 1.2em; color: #555;">
         I sincerely hope you enjoy my portfolio. It’s live, so feel free to check it out 
-        <a href="https://abbadmalikk.github.io/Abbad-Portfolio/" style="color: #007BFF; text-decoration: none;">right here</a>! 🚀
+        <a href="https://abbadmalikk.github.io/Abbad-Portfolio/" target="_blank" style="color: #007BFF; text-decoration: none;">right here</a>! 🚀
     </p>
     <p style="font-size: 1.2em; color: #555;">
         My toolkit includes <strong>Vite</strong> for fast development, and I rely on 
