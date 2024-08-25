@@ -1,7 +1,7 @@
 import React from 'react'
 import "./about.css"
 import { MdInsertDriveFile } from 'react-icons/md';
-import CV from '/Abbad_Malik.pdf'
+import CV from '/Abbad_Malik_CV.pdf'
 import Info from './Info'
 const About = () => {
   return (
