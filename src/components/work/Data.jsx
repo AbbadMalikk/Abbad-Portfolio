@@ -1,4 +1,7 @@
-
+import A0 from '../../assets/A0.png'
+import A1 from '../../assets/A1.jpg'
+import A2 from '../../assets/A2.jpg'
+import T0 from '../../assets/T0.jpg'
 import T1 from '../../assets/T1.png'
 import T2 from '../../assets/T2.png'
 import T3 from '../../assets/T3.png'
@@ -25,13 +28,21 @@ import FR3 from '../../assets/FR3.gif'
 import GV1 from '../../assets/GV1.png'
 import GV2 from '../../assets/GV2.png'
 import GV3 from '../../assets/GV3.gif'
-
-
+import CP0 from '../../assets/CP0.png'
+import CP1 from '../../assets/CP1.png'
+import CP2 from '../../assets/CP2.png'
+import CP3 from '../../assets/CP3.png'
+import CP4 from '../../assets/CP4.png'
+import R0 from '../../assets/R0.jpg'
+import R1 from '../../assets/R1.jpg'
+import R2 from '../../assets/R2.jpg'
+import R3 from '../../assets/R3.jpg'
+import R4 from '../../assets/R4.gif'
 
 export const projectsData=[
     {
         id:1,
-        image:T1,
+        image:T0,
         title: 'Social Media App',
         category: 'web',
         modalImages: [T1,T2,T3,T4,T5],
@@ -63,11 +74,35 @@ export const projectsData=[
     },
     {
         id:5,
+        image:CP0,
+        title: 'Coffee Planet - Mobile App Design',
+        category: 'design',
+        modalImages: [CP1,CP2,CP3,CP4],
+        modalDescription: 'Figma Design for a Mobile Application for Coffee Planet showing attractive design.'
+    },
+    {
+        id:6,
         image:GV1,
         title: 'Music Streaming Website - Landing Page',
         category: 'design',
         modalImages: [GV1,GV2,GV3],
         modalDescription: 'Figma Design for Landing Page for GrooveVibes. Implementing Prototyping Skills for Immersive animation.'
+    },
+    {
+        id:7,
+        image:R0,
+        title: 'Readify - Mobile Application',
+        category: 'mob',
+        modalImages: [R1,R2,R3,R4],
+        modalDescription: 'READIFY is tailored for small business owners and social media pages to elevate their operations from informal text confirmations to professional invoices. It’s all about building trust, assurance, and a professional connection with customers.'
+    },
+    {
+        id:8,
+        image:A0,
+        title: 'R3al.AI - Landing Page',
+        category: 'design',
+        modalImages: [A1,A2],
+        modalDescription: 'Figma Design of Landing Page for a Website R3al.AI providing services to people for developing AI Systems.'
     }
 
 ]
@@ -83,4 +118,8 @@ export const projectsNav=[
     {
         name:'design'
     },
+    {
+        name:'mob'
+    },
+
 ]
