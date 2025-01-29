@@ -92,7 +92,7 @@ export const projectsData=[
         id:7,
         image:R0,
         title: 'Readify - Mobile Application',
-        category: 'mob',
+        category: 'mobile',
         modalImages: [R1,R2,R3,R4],
         modalDescription: 'READIFY is tailored for small business owners and social media pages to elevate their operations from informal text confirmations to professional invoices. It’s all about building trust, assurance, and a professional connection with customers.'
     },
@@ -119,7 +119,7 @@ export const projectsNav=[
         name:'design'
     },
     {
-        name:'mob'
+        name:'mobile'
     },
 
 ]

@@ -38,9 +38,50 @@ a{
     border-radius: 1rem;
     cursor: pointer;
 }
+.work_card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out;
+}
+
+.work_card:hover {
+  transform: scale(1.1);
+}
+.work_card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transition: transform 0.6s ease-in-out;
+}
+
+.work_card:hover::before {
+  animation: shine 0.8s linear 1; /* Play animation once */
+}
+
+/* Shine Animation */
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
 
 .work_img {
     width: 295px;
+    height: max-content;
+    aspect-ratio: 1.6;    
     border-radius: 1rem;
     margin-bottom: var(--mb-1);
 }
@@ -65,7 +106,7 @@ a{
     transition: 0.4s;
 }
 
-.work_button:hover .work_button-icon{
+.work_card:hover .work_button-icon{
     transform: translateX(0.25rem);
 }
 
